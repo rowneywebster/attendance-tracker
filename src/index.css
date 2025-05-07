@@ -1,14 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: #f1f3f4;
+  background: #f5f5f5;
   margin: 0;
   padding: 0;
   color: #202124;
-}
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
 }
 
 .container {
@@ -18,56 +13,113 @@ h1 {
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
 }
 
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #202124;
+}
+
+/* Button Styles */
 button {
-  background-color: #6750a4;
-  color: white;
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  color: #ffffff;
 }
 
-button:hover {
-  background-color: #4f378b;
+.action-button {
+  background-color: #5a6268;
+  color: white;
 }
 
-.student-card {
-  background: #fafafa;
-  padding: 1rem;
-  margin: 0.75rem 0;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-.student-card.present {
-  background-color: #e8f5e9;
-}
-
-.student-card.absent {
-  background-color: #ffebee;
-}
-
-.summary {
-  margin: 1rem 0;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #5f6368;
+.action-button:hover {
+  background-color: #4a5258;
 }
 
 .reset-button {
-  margin-top: 1rem;
   background-color: #d32f2f;
+  color: white;
+  margin: 1rem 0;
+  display: block;
 }
 
 .reset-button:hover {
   background-color: #b71c1c;
+}
+
+/* Student List Styles */
+.student-list {
+  margin-top: 1.5rem;
+}
+
+.student {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.student.present {
+  border-left: 4px solid #28a745;
+}
+
+.student.absent {
+  border-left: 4px solid #dc3545;
+}
+
+.student-name {
+  font-weight: 500;
+}
+
+.student-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.status-button {
+  padding: 0.5rem 1rem;
+}
+
+.status-button.present {
+  background-color: #28a745;
+}
+
+.status-button.absent {
+  background-color: #dc3545;
+}
+
+.remove-button {
+  background-color: #5a6268;
+}
+
+/* Add Student Section */
+.add-student {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  
+}
+
+.add-student input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Utility Classes */
+.button-separator {
+  margin: 1.5rem 0;
+  border-top: 1px solid #eee;
+}
+.rowney{
+  background-color: #28a745;
 }
